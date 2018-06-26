@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface WeatherTests : XCTestCase
 
@@ -24,16 +25,20 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+-(void) testJSONParserData {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"document" ofType:@"json"];
+    
+        NSData *data = [NSData dataWithContentsOfFile:path];
+        NSArray *weatherData =  [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+        
+        ViewController *vc = [[ViewController alloc] init];
+        
+        [vc DataRetrivedFromService:weatherData];
+        
+        float Present_min_value = [[vc.presentWeatherData valueForKey:@"temp_min"] floatValue];
+        NSString *minvalue = [NSString stringWithFormat:@"%.2f",Present_min_value];
+        XCTAssertEqualObjects(minvalue,@"87.58");
+    
 }
 
 @end

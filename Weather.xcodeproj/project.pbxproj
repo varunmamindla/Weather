@@ -14,6 +14,7 @@
 		D331857020E1AE9D0001EB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D331856E20E1AE9D0001EB3B /* LaunchScreen.storyboard */; };
 		D331857320E1AE9D0001EB3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D331857220E1AE9D0001EB3B /* main.m */; };
 		D331857D20E1AE9D0001EB3B /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D331857C20E1AE9D0001EB3B /* WeatherTests.m */; };
+		D331858B20E2A2230001EB3B /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = D331858A20E2A2230001EB3B /* document.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		D331857820E1AE9D0001EB3B /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D331857C20E1AE9D0001EB3B /* WeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTests.m; sourceTree = "<group>"; };
 		D331857E20E1AE9D0001EB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D331858A20E2A2230001EB3B /* document.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = document.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		D331856220E1AE9C0001EB3B /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				D331858A20E2A2230001EB3B /* document.json */,
 				D331856320E1AE9C0001EB3B /* AppDelegate.h */,
 				D331856420E1AE9C0001EB3B /* AppDelegate.m */,
 				D331856620E1AE9C0001EB3B /* ViewController.h */,
@@ -183,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D331858B20E2A2230001EB3B /* document.json in Resources */,
 				D331857020E1AE9D0001EB3B /* LaunchScreen.storyboard in Resources */,
 				D331856D20E1AE9D0001EB3B /* Assets.xcassets in Resources */,
 				D331856B20E1AE9C0001EB3B /* Main.storyboard in Resources */,
